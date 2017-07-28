@@ -1,0 +1,668 @@
+/* Reset html */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mutual styles */
+
+a, a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a, h2, h3 {
+  text-transform: uppercase;
+}
+
+p, a, label, i {
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #F9F9F9;
+}
+
+/* Header and menu styles */
+
+header .brand-logo {
+  width: 130px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  float: right;
+  width: 70%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul li {
+  margin-top: 60px;
+}
+
+.menu li i {
+  margin-left: -20px;
+}
+
+.menu a, .menu i {
+  cursor: pointer;
+  font-weight: 600;
+  color: #403225;
+  transition: .5s;
+}
+
+.menu a:hover, .menu i:hover {
+  color: #a67b52;
+  transition: .5s;
+}
+
+.actived {
+  color: #a67b52 !important;
+}
+
+.menu li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #a8a8a8;
+  margin-left: 50px;
+}
+
+/* Banner with slider -> You can find other styles for this in the file slick.css */
+
+.slider {
+  overflow: hidden;
+}
+
+/* Recipes styles */
+
+#recipes h2 {
+  display: none;
+}
+
+.recipes-images {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  top: -80px;
+}
+
+.recipes-images div {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.recipes-images img {
+  width: 240px;
+  margin-right: -20px;
+}
+
+.recipes-images p {
+  display: block;
+  position: relative;
+  top: -50px;
+  text-align: center;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: 1px;
+}
+
+.p-margin-correct {
+  margin-left: 20px;
+}
+
+.recipes-images figure img {
+  -webkit-filter: brightness(100%) contrast(50%);
+  filter: brightness(100%) contrast(50%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.recipes-images figure:hover img {
+  -webkit-filter: brightness(100%) contrast(100%);
+  filter: brightness(100%) contrast(100%);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+/* About styles */
+#about {
+  margin-top: 100px;
+}
+
+#about .container {
+  display: flex;
+}
+
+.about-us-image {
+  float: left;
+  margin-right: 80px;
+}
+
+.about-us-image img {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-us-text {
+  width: 90%;
+}
+
+.about-us h2, .about-news h2 {
+  color: #403225;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.about-us p, .about-news p {
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 1.6rem;
+  color: #484848;
+}
+
+.about-us a, .about-news a {
+  text-transform: none;
+  margin-right: 10px;
+  color: #ad8662;
+}
+
+.about-us i, .about-news i {
+  color: #ad8662;
+}
+
+.about-news {
+  width: 65%;
+}
+
+.about-news h2 {
+  color: #d1bba6;
+}
+
+.about-news span {
+  color: #a67b52;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.about-news p {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+}
+
+
+/* Partners styles */
+
+#partners {
+  margin-top: 100px;
+  background-color: #f4f4f4;
+  height: 400px;
+}
+
+#partners h2 {
+  color: #403225;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.partners-slider {
+  overflow: hidden;
+}
+
+.partners-slider img {
+  margin-left: 150px;
+}
+
+
+/* Contact styles */
+
+#contact {
+  margin-top: 100px;
+}
+
+#contact form {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+}
+
+#contact .identification {
+  width: 48%;
+}
+
+#contact .subject {
+  width: 48%;
+}
+
+#contact h2 {
+  color: #403225;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+#contact label {
+  display: block;
+  color: #484848;
+  font-weight: 500;
+}
+
+#contact input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2px;
+}
+
+#contact input::placeholder, #contact textarea::placeholder {
+  font-weight: 300;
+  font-size: .9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contact textarea {
+  height: 180px;
+  resize: vertical;
+}
+
+#contact .button {
+  width: 130px;
+  height: 35px;
+  padding: 5px;
+  font-size: 0.9rem;
+  background-color: #403225;
+  outline: none;
+  border: none;
+  color: #f9f9f9;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+
+/* Footer styles */
+
+footer {
+  background-color: #403225;
+  color: #f9f9f9;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  margin-left: -30px;
+}
+
+.copyright p {
+  font-weight: 200;
+  color: #67584a;
+  margin-top: 20px;
+  font-size: .7rem;
+}
+
+.footer-header, .footer-menu, .footer-informations {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-medias {
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.social-medias i {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #a67b52;
+}
+
+.footer-menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-menu nav a {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: 300;
+}
+
+.footer-informations i {
+  float: left;
+  color: #67584a;
+}
+
+.footer-informations h3, .footer-informations p {
+  margin-left: 50px;
+}
+
+.footer-informations p {
+  margin-bottom: 30px;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.footer-informations h3 {
+  margin-bottom: 10px;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.footer-informations img {
+  float: right;
+}
+
+.divider {
+  border-left: 1px solid #67584a;
+  height: 150px;
+}
+
+/* For screens less than 1200 pixels */
+@media only screen and (max-width: 1200px) {
+
+  /* Header and menu */
+
+  .menu a, .menu i {
+    cursor: pointer;
+    font-size: .8rem;
+  }
+
+  /* Banner */
+
+  .slick-dots li {
+    height: 80px;
+  }
+
+  /* Recipes */
+
+  #recipes img {
+    width: 200px;
+    overflow: hidden;
+  }
+
+  .recipes-images {
+    top: -60px;
+  }
+
+  .recipes-images p {
+    font-size: .7rem;
+  }
+
+  /* About */
+
+  #about {
+    margin-top: 50px;
+  }
+  #about .container {
+    flex-wrap: wrap;
+  }
+
+  .about-news {
+    float: left;
+    width: 100%;
+  }
+  .about-us-image {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .about-us-image img {
+    width: 200px;
+  }
+
+  #news {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  .divider {
+    display: none;
+  }
+}
+
+/* For screens less than 994 pixels */
+
+@media only screen and (max-width: 994px) {
+
+  /* Header and Menu */
+
+  .menu a, .menu i {
+    font-size: .7rem;
+  }
+
+  /* Banner */
+
+  .slick-dots li {
+      height: 60px;
+  }
+
+  /* Recipes */
+
+  .recipes-images p {
+    font-size: .6rem;
+  }
+
+  #recipes img {
+    width: 180px;
+    overflow: hidden;
+  }
+
+  .recipes-images {
+    top: -40px;
+  }
+
+  #recipes img {
+    width: 152px;
+  }
+
+  /* About */
+  #news {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  footer .container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
+
+/* For screens less than 768 pixels */
+
+@media only screen and (max-width: 768px) {
+
+  /* Header and Menu */
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header .brand-logo {
+    width: 150px;
+    margin-bottom: 0px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+
+  .menu {
+    float: none;
+    width: 100%;
+  }
+
+  .menu ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu li:nth-child(5)::after {
+    content: none;
+  }
+  .menu li i {
+    margin-left: 0px;
+  }
+
+  .menu ul {
+    justify-content: space-around;
+  }
+
+  /* Banner */
+
+  .slick-dots li {
+    height: 50px;
+  }
+
+  /* Recipes */
+
+  .recipes-images p {
+    font-size: .6rem;
+  }
+
+  .recipes-images {
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .recipes-images div {
+    width: auto;
+  }
+
+  .recipes-images img {
+    width: 180px;
+    overflow: hidden;
+    margin-right: 0px;
+  }
+
+  #recipes h2 {
+    display: block;
+    color: #403225;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .p-margin-correct {
+    margin-left: 0px;
+  }
+
+  /* About */
+
+  .about-us-image img {
+    display: none;
+  }
+
+  .about-us-text {
+    width: 100%;
+  }
+
+  .about-news {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Contact */
+
+  #contact form {
+    flex-wrap: wrap;
+  }
+
+  #contact .identification {
+    width: 100%;
+  }
+
+  #contact .subject {
+    width: 100%;
+  }
+}
