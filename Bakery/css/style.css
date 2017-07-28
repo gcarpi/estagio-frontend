@@ -94,8 +94,12 @@ header .brand-logo {
 }
 
 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu ul li {
@@ -110,11 +114,15 @@ header .brand-logo {
   cursor: pointer;
   font-weight: 600;
   color: #403225;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
 .menu a:hover, .menu i:hover {
   color: #a67b52;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -141,6 +149,8 @@ header .brand-logo {
 }
 
 .recipes-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   position: relative;
@@ -179,17 +189,21 @@ header .brand-logo {
   -webkit-filter: brightness(100%) contrast(50%);
   filter: brightness(100%) contrast(50%);
   -webkit-transform: scale(1);
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .recipes-images figure:hover img {
   -webkit-filter: brightness(100%) contrast(100%);
   filter: brightness(100%) contrast(100%);
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
 }
 
 
@@ -199,6 +213,8 @@ header .brand-logo {
 }
 
 #about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -209,7 +225,8 @@ header .brand-logo {
 
 .about-us-image img {
   width: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about-us-text {
@@ -291,9 +308,13 @@ header .brand-logo {
 }
 
 #contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 98%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #contact .identification {
@@ -332,6 +353,18 @@ header .brand-logo {
   border-radius: 2px;
 }
 
+#contact input::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: .9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contact input:-ms-input-placeholder, #contact textarea:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: .9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
 #contact input::placeholder, #contact textarea::placeholder {
   font-weight: 300;
   font-size: .9rem;
@@ -366,9 +399,14 @@ footer {
 }
 
 footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .copyright {
@@ -400,9 +438,16 @@ footer .container {
 }
 
 .footer-menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer-menu nav a {
@@ -478,7 +523,8 @@ footer .container {
     margin-top: 50px;
   }
   #about .container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .about-news {
@@ -549,8 +595,10 @@ footer .container {
   /* Footer */
 
   footer .container {
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
 }
@@ -593,7 +641,8 @@ footer .container {
   }
 
   .menu ul {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   /* Banner */
@@ -655,7 +704,8 @@ footer .container {
   /* Contact */
 
   #contact form {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   #contact .identification {
