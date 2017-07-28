@@ -1,4 +1,3 @@
-
 $(function() {
   /* Configs slider banner */
   var slider = $('.slider').slick({
@@ -26,5 +25,6 @@ $(function() {
     centerMode: true,
     variableWidth: true
   });
+
 
 })
